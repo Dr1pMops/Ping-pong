@@ -43,5 +43,11 @@ class Player(GameSprite):
         if keys[K_w] and self.rect.y > 5:
             self.rect.y -=self.speedif keys[K_s] and self.rect.y < win_height - 80:
             self.rect.y += self.speed
-
+            
+#игровая сцена:
+back = (200, 255, 255) #цвет фона (background)
+win_width = 600
+win_height = 500
+window = display.set_mode((win_width, win_height))
+window.fill(back)
 
